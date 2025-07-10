@@ -1,7 +1,7 @@
 # :fzf-tab:complete:(\\|*/|)docker:
 
 case $group in
-  *'command'*)
+  *'sub-command'|*'command')
     docker "$word" --help 2>&1 | bat --language=help --plain
     ;;
   *)
