@@ -1,11 +1,2 @@
-# :fzf-tab:complete:(\\|*/|)pip3:
-
-case $group in
-  *'command'*|'completions'|*'sub-command'*)
-    echo "补全词(word): '$word', 补全组(group): '$group'" > /tmp/docker_debug.txt
-    ;;
-
-  *)
-    echo "补全词(word): '$word', 补全组(group): '$group'" > /tmp/docker_debug.txt
-    ;;
-esac
+# :fzf-tab:complete:(\\|*/|)pip(|3*):
+echo "PIP补全 -> 词: '$word', 组: '$group'" > /tmp/pip_debug.txt
