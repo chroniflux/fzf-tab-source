@@ -2,8 +2,11 @@
 
 case $group in
   'completions')
-    docker "$word" --help 2>&1 | bat --language=help --plain
+    if [[ $CURRENT -eq 2 ]]; then
+      docker "$word" --help 2>&1 | bat --language=help --plain
+    fi
     ;;
+
   *)
     ;;
 esac
