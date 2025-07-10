@@ -1,2 +1,2 @@
 # :fzf-tab:complete:(\\|*/|)docker:argument-1
-docker help $word | bat -lhelp
+docker $word --help | bat -lhelp
